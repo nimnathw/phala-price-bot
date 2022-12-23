@@ -131,7 +131,7 @@ one_month_ago_string = one_month_ago.strftime('%Y-%m-%d')
 
 # Set the API endpoint URL and the API key as variables
 url = 'https://khala.api.subscan.io/api/scan/price/history'
-api_key = '061b52b9c59943bca8b9d00b91e6ba08'
+api_key = SUBSCAN_API
 
 # Set the request headers
 headers = {
