@@ -123,7 +123,7 @@ today = datetime.date.today()
 # Convert the date to a string using the strftime() method
 date_string = today.strftime('%Y-%m-%d')
 
-# Calculate the date one year before today
+# Calculate the date one month before today
 one_month_ago = today - datetime.timedelta(days=30)
 
 # Convert the date to a string using the strftime() method
@@ -240,6 +240,7 @@ async def check_price(ctx):
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CheckFailure):
-        await ctx.send('You are not using the Bot_commands channel or You do not have the correct role for this command.')
+        await ctx.send('You are not using the bot_commands channel \
+            or You do not have the correct role for this command.')
 
 bot.run(TOKEN)
