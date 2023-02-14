@@ -1,4 +1,4 @@
-# phala_price_bot
+# phala-price-bot
 
 ### A simple bot with two commands
 * !verify for verifying guild member with CAPTCHA solving
